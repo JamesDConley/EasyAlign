@@ -1,10 +1,4 @@
-Thanks for using EasyAlign!
-
-This software can align python lists of any objects that can be compared with the '==' operator (Notably, strings!)
-
-To use it
-
-Thanks for using EasyAlign!
+Thanks for using EasyAlign! :)
 
 This software can align python lists of any objects that can be compared with the '==' operator (including strings!)
 
@@ -19,3 +13,5 @@ print(aligned_seq1,  aligned_seq2,  score )
 my_global_aligner = GlobalAligner(2, -1)
 aligned_seq1,  aligned_seq2,  score = my_global_aligner.align(seq1, seq2)
 print(aligned_seq1,  aligned_seq2,  score )
+
+If you want to look at more local alignments than just the best scored one you can directly access the score table from the last alignment using my_local_aligner.table - it's a 2d list of integers.  You can then pass the x,y coordinates (seq1 is x, seq2 is y) to my_local_aligner.traceback(x,y) which will return the aligned local sequences that end at that x/y coord.
