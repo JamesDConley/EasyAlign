@@ -1,5 +1,9 @@
 Thanks for using EasyAlign! :)
 
+You can install with pip!
+
+pip install EasyAlign 
+
 This software can align python lists of any objects that can be compared with the '==' operator (including strings!)
 
 To use it
